@@ -45,7 +45,7 @@
 # i = 2
 # j = 1 | j = 2
 
-for i in range(5):
-    for j in range(5):
-        print("*", end=" ")
-    print()
+# for i in range(5):
+#     for j in range(5):
+#         print("*", end=" ")
+#     print()
