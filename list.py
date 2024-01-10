@@ -33,14 +33,23 @@ odd = []
 #     else:
 #         odd.append(i)
 
-count = len(l)
+# count = len(l)
 
-for i in range(count):
-    if l[i] % 2 == 0:
-        even.append(l[i])
-    else:
-        odd.append(l[i])
+# for i in range(count):
+#     if l[i] % 2 == 0:
+#         even.append(l[i])
+#     else:
+#         odd.append(l[i])
 
 
-print("even - ", even)
-print("odd - ", odd)
+# print("even - ", even)
+# print("odd - ", odd)
+
+
+# for i in range(len(l)):
+#     l.pop()
+#     print(l)
+
+# l.clear()
+
+# print(l)
