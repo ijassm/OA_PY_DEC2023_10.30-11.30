@@ -21,11 +21,11 @@
 # print(sum(l1))
 # print(sum(l2))
 
-l1 = [1, 2, 2, 3, 4]
-l2 = [45, 6, 3]
-l3 = [1]
-l4 = [15, 2, 45, 12, 7]
-l5 = [15, 3, 45, 12, 7]
+# l1 = [1, 2, 2, 3, 4]
+# l2 = [45, 6, 3]
+# l3 = [1]
+# l4 = [15, 2, 45, 12, 7]
+# l5 = [15, 3, 45, 12, 7]
 
 
 # def valueEqualToIndex(list):
@@ -112,3 +112,25 @@ l5 = [15, 3, 45, 12, 7]
 
 
 # my_function(location="chennai", name="xyz", age=10)
+
+a = 10
+
+
+def third():
+    print("Third function called")
+
+
+def second():
+    print("Second function called")
+    third()
+
+
+def first():
+    print("First function called")
+    second()
+
+
+first()
+
+
+print("hello world")
