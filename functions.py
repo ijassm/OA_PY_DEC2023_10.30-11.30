@@ -113,24 +113,38 @@
 
 # my_function(location="chennai", name="xyz", age=10)
 
-a = 10
+# a = 10
 
 
-def third():
-    print("Third function called")
+# def third():
+#     print("Third function called")
 
 
-def second():
-    print("Second function called")
-    third()
+# def second():
+#     print("Second function called")
+#     third()
+#     print("Third function terminated")
 
 
-def first():
-    print("First function called")
-    second()
+# def first():
+#     print("First function called")
+#     second()
+#     print("First function terminated")
 
 
-first()
+# first()
 
 
-print("hello world")
+# print("came to global function")
+
+# a = 1
+
+
+# def recurrsion(a):
+#     if a < 10:
+#         recurrsion(a + 1)
+
+#     return "Recurrsion finished", a
+
+
+# print(recurrsion(a))
