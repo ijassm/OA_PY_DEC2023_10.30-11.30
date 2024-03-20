@@ -25,6 +25,10 @@ db = client["OA_PY_DEC2023"]
 
 students = db["students"]
 
+# Return a list of all collections in your database:
+
+# print(db.list_collection_names())
+
 # print(type(time.time()))
 # print(time.time())
 
@@ -204,19 +208,51 @@ students = db["students"]
 
 # read
 
-# filter = {"_id": ObjectId("65e95f51f039d0bbd87646a3")}
+# query = {"_id": ObjectId("65e95f51f039d0bbd87646a3")}
 
-# s = students.find_one(filter)
+# s = students.find_one(query)
 
-filter = {"age": 25}
+# query = {"age": {"$lt": 25}}
+# fields = {"_id": 0, "age": 1, "firstName": 1, "lastName": 1}
 
-s = students.find(filter)
+# s = students.find(query, fields)
 
-print(s)
+# print(s)
 
 # candidates = list(s)
 
 # print(candidates)
 
-for i in s:
-    print(i, "\n")
+# for i in s:
+#     print(i, "\n")
+
+
+# delete one
+
+# query = {"_id": ObjectId("65e95f51f039d0bbd87646a3")}
+
+# students.delete_one(query)
+
+# delete many
+
+# query = {"age": {"$lt": 25}}
+
+# students.delete_many(query)
+
+# for i in students.find():
+#     print(i, "\n")
+
+# update one
+# query = {"_id": ObjectId("65e95f51f039d0bbd876469f")}
+
+# update = {"$set": {"age": 30}}
+
+# students.update_one(query, update)
+
+
+# update many
+# query = {"age": 25}
+
+# update = {"$set": {"age": 30}}
+
+# students.update_many(query, update)
